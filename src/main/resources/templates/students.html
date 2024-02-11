@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" th:href="@{css/style.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{css/style.css}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link th:href="@{https://fonts.googleapis.com/css2?family=Kelly+Slab}" rel="stylesheet">
+    <title>student</title>
+</head>
+<body>
+    <aside class="navigation">
+        <a href="#" class="navigation-item">на главную</a>
+        
+    </aside>
+
+    <main class="main">
+        <h1 class="main-heading"> система управления студентами и их успеваемостью
+
+        </h1>
+
+        <div class="student-btns">
+            <div class="student-btns1">
+                <button class="student-btn"> посмотреть умпеваемость выбранных студентов</button>
+                <button class="student-btn"> модифицировать выбранного студента</button>
+            </div>
+            <div class="student-btns1">
+                <button class="student-btn"> создать студента</button>
+                <button class="student-btn">удалить выбранных студентов</button>
+            </div>
+        </div>
+        <h2 class="heading-secondary">
+            список студентов
+        </h2>
+        <table class="student-table" border="1">
+            <tr>
+                <th>&nbsp</th>
+                <th>фамилия</th>
+                <th>имя</th>
+                <th>группа</th>
+                <th>дата поступления</th>
+            </tr>
+
+            <tr>
+                <td> <input type="checkbox" id="">
+                </td>
+                <td>сидоров</td>
+                <td>сидор</td>
+                <td>кт-21</td>
+                <td>дата</td>
+            </tr>
+            <tr>
+                <td> <input type="checkbox" id="">
+                </td>
+                <td>петров</td>
+                <td>петр</td>
+                <td>кт-21</td>
+                <td>дата</td>
+            </tr>
+            <tr>
+                <td> <input type="checkbox" id="">
+                </td>
+                <td>иванов</td>
+                <td>иван</td>
+                <td>кт-21</td>
+                <td>дата</td>
+            </tr>
+            <tr>
+                <td> <input type="checkbox" id="">
+                </td>
+                <td>макаревич</td>
+                <td>андрей</td>
+                <td>кт-21</td>
+                <td>дата</td>
+            </tr>
+            <tr>
+                <td> <input type="checkbox" id="">
+                </td>
+                <td>бельгиец</td>
+                <td>василий</td>
+                <td>кт-21</td>
+                <td>дата</td>
+            </tr>
+        </table>
+
+    </main>
+    <aside class="logout">
+        <a href="#" class="logout-btn">logout</a>
+
+    </aside>
+    
+</body>
+</html>

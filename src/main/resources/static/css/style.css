@@ -1,0 +1,216 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* основные компоненты*/
+body {
+  /*  background-color: rgba(0, 0, 0, 0.26);*/
+  background-image: linear-gradient(#d1cccce7, #523131d8), url(../image/student.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    
+    
+    
+    padding: 1rem 2rem;
+    text-shadow: 5px 5px 3px #369;
+    font-family: 'Kelly Slab', cursive;
+   
+
+}
+
+.main-heading {
+    border: 2px solid #000;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.main-heading-title {
+    border: 2px solid #000;
+    padding: 0.5rem 0.1rem;
+    text-align: center;
+    margin: 2rem 10rem ;
+    
+}
+.heading-secondary {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+a {
+    font-size: 1.5rem;
+}
+
+button {
+    margin: 1rem 1rem 1rem 0;
+    padding: 1rem 2rem;
+    background-color: rgb(202, 144, 144);
+    border-radius: 5%;
+}
+tr, th, td {
+    padding: 1rem 1.5rem;
+}
+
+/*tr:first-child {
+    background-color: #fff;
+}*/
+th {
+    background-color: rgb(202, 144, 144);
+}
+
+
+table {
+    border-collapse: collapse;
+    height: 2rem;
+}
+
+/*центральный блок*/
+.main {
+    flex-grow: 3;
+    margin-top: 1rem;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+/*левая боковая панель*/
+
+.navigation {
+    flex-grow: 1;
+    margin-top: 5rem;
+    margin-left: 3rem;
+    align-self: flex-start;
+}
+.navigation-item {
+    margin-left: 0.5rem;
+    
+}
+
+
+
+
+
+/*правая боковая панель*/
+.logout {
+    flex-grow: 1; 
+    text-align: center;
+    
+}
+
+/*список студентов*/
+
+.student-btns {
+    display: flex;
+}
+.student-btn {
+    width: 20rem;
+    padding: 5px;
+}
+
+.student-btns1 {
+    display: flex;
+    flex-direction: column;
+}
+.student-table {
+    width: 100%;
+   border-collapse: collapse;
+}
+/*disciplines*/
+.discipline-btns {
+    display: flex;
+    flex-direction: column;
+}
+.field {
+    display: flex;
+    flex-direction: column;
+    margin-left:  7rem;  
+    padding: 7px;
+    border:  2px solid #000;
+    border-radius: 10%;
+}
+
+
+/* успеваемость студента*/
+
+.semestr-note {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+}
+
+.choice-btn {
+    height: 1.5rem;
+    border: 1px solid rgb(7, 0, 0);
+    background-color: rgb(202, 144, 144);
+    padding: 1px 20px 1px 20px;  
+
+}
+
+.choice {
+    font-size: 15px;
+    padding: 1px 20px 1px 20px;  
+}
+
+select {
+height: 1.5rem;
+}
+
+.choice-semestr {
+    display: flex;
+    justify-content: space-between;
+    
+    }
+    
+
+.cell {
+    background-color: rgb(249, 252, 252);
+    border: 2px solid rgb(7, 0, 0);
+    width: 15rem;
+    
+    flex-direction: column;
+    text-align: "left";
+    
+    height: 2rem;
+    }
+
+.cell1 {
+    width: 11rem;
+    text-align: "left";
+    }
+.choice-semestr1 {
+    display: flex;  
+    }
+.term {
+    display: flex;
+    justify-content: space-between;
+}
+.discip-in-sem {
+    display: flex;
+    
+}
+.select-discip {
+    height: 4rem;
+}
+
+.name-window{
+    
+    padding-bottom: 1.5rem;
+    display: flex;
+    
+    
+  }
+  .beginning {
+    margin-top: 5rem;
+    text-align: center;
+  }
+  .other {     
+    padding: 7px;
+    border:  2px solid #000;
+    border-radius: 10%;
+  }

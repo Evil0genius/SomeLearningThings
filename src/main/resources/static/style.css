@@ -1,0 +1,52 @@
+.header-container {
+
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    background-color: #ddfad7;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    width: 20%;
+
+}
+
+.center {
+    display: flex;
+    justify-content: space-evenly;
+    width: 40%;
+
+
+
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 33px;
+    padding-bottom: 33px;
+    /*border-bottom: 2px solid white;*/
+}
+
+.text {
+    color: black;
+}
+
+.right {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 20%;
+}
+
+.lang-select {
+    display: flex;
+    align-items: center;
+
+}
