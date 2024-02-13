@@ -55,6 +55,21 @@ public class ArticleController {
         System.out.println(author);
         return "redirect:/";
     }
+    @GetMapping("/editArticle/{id}")
+    public String editArticle(@PathVariable(value = "id") long id, Model model) {
+        Optional<Article> article = articleRepo.findById(id);
+        model.addAttribute("article", article.get());
+        return "editArticle";
+    }
+    @PostMapping("/editArticle")
+    public String editArticle(@RequestParam String title, @RequestParam String content, @RequestParam String author,
+    @RequestParam Long id){
+        Article article = new Article(title, content, author );
+        article.id = id;
+        articleRepo.save(article);
+        return "redirect:/blog/"+id;
+    }
+
 
 
 }

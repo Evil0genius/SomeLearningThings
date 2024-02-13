@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--<img style="position: absolute" id="plane" src="image/plane.jpg" alt="">-->
+<h1 id="title"> </h1>
+<p id="content"></p>
+<p id="author"></p>
+<script>
+    const article = {
+        "title": "Статья1",
+        "content": "Content",
+        "author": "frttyhu"
+    }
+
+    const title = document.getElementById("title")
+    const content = document.getElementById("content")
+    const author = document.getElementById("author")
+
+    title.innerText = article.title
+    content.innerText = article.content
+    author.innerText = article.author
+
+    console.log(article);
+   /*const plane = document.getElementById("plane");
+   let i = 0;
+   setInterval(()=>{
+       plane.style.left = (i++)+"px";
+   }, 30)*/
+</script>
+
+</body>
+</html>
