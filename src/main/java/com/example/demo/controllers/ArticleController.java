@@ -69,7 +69,17 @@ public class ArticleController {
         articleRepo.save(article);
         return "redirect:/blog/"+id;
     }
-
+    @GetMapping("/deleteArticle/{id}")
+    public String deleteArticle(@PathVariable(value = "id") long id, Model model) {
+        Optional<Article> article = articleRepo.findById(id);
+        model.addAttribute("article", article.get());
+        return "deleteArticle";
+    }
+    @PostMapping("/deleteArticle")
+    public String deleteArticle(@RequestParam Long id) {
+        articleRepo.deleteById(id);
+        return "redirect:/";
+    }
 
 
 }

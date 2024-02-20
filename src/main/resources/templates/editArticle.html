@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ru">
+<html lang="ru" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,7 +10,7 @@
 <body>
 <nav th:insert="components/navbar :: navbar" class="navbar navbar-expand-lg bg-body-tertiary"></nav>
 <div class="container my-3">
-    <h1 class="my-3 text-center">Редакт статью</h1>
+    <h1 class="my-3 text-center">Редактировать статью</h1>
     <div class="col-sm6 mx-auto">
         <form action="/editArticle" method="post">
             <input type="hidden" name="id" th:value="${article.id}">
