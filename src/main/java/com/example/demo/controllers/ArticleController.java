@@ -50,9 +50,6 @@ public class ArticleController {
     public String addArticle(@RequestParam String title, @RequestParam String content, @RequestParam String author){
         Article article = new Article(title, content, author);
         articleRepo.save(article);
-        System.out.println(title);
-        System.out.println(content);
-        System.out.println(author);
         return "redirect:/";
     }
     @GetMapping("/editArticle/{id}")
