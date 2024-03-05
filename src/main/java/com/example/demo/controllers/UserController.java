@@ -52,18 +52,19 @@ public class UserController {
         model.addAttribute("error", err);
         return "login";
     }
-    @PostMapping("/login")
-    public String login(
-            @RequestParam String email,
-            @RequestParam String pass
-    ){
-        Optional<User> oUser = userRepo.findByEmailAndPass(email, pass);
-        if(oUser.isEmpty()){
-            System.out.println("Введён неправильный логин или пароль!");
-            return "redirect:/login?error=notFound";
-        }else{
-            System.out.println("Пользователь "+email+" авторизован");
-            return "redirect:/";
-        }
-    }
+//    @PostMapping("/login")
+//    public String login(
+//            @RequestParam String email,
+//            @RequestParam String pass
+//    ){
+//        Optional<User> oUser = userRepo.findByEmailAndPass(email, pass);
+//        if(oUser.isEmpty()){
+//            System.out.println("Введён неправильный логин или пароль!");
+//            return "redirect:/login?error=notFound";
+//        }else{
+//            System.out.println("Пользователь "+email+" авторизован");
+//            return "redirect:/";
+//        }
+//    }
+
 }
